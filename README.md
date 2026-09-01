@@ -21,9 +21,27 @@ ReturnDesk is an internal dashboard for managing customer return requests, built
 - **Create Requests:** Add new return requests with duplicate prevention validation.
 - **Detailed View:** Inspect request history and associated internal notes.
 
-## 💻 Local Development Setup
+## 📁 Folder Structure
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/snehasabde/returndesk.git](https://github.com/snehasabde/returndesk.git)
-   cd returndesk
+```text
+returndesk/
+├── app/
+│   ├── api/
+│   │   └── requests/
+│   │       └── route.ts         # REST API routes (GET, POST)
+│   ├── layout.tsx               # App root layout
+│   └── page.tsx                 # Dashboard home page (Client component)
+├── components/                  # UI Modal and List Components
+│   ├── CreateRequestModal.tsx
+│   ├── RequestDetailModal.tsx
+│   └── RequestList.tsx
+├── lib/
+│   └── db.ts                    # Prisma client instance
+├── prisma/
+│   ├── schema.prisma            # Database schema models & enums
+│   └── seed.ts                  # Database seeding script
+├── public/                      # Static assets
+├── .env                         # Environment variables (Ignored in Git)
+├── package.json
+└── README.md
+
