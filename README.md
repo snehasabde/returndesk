@@ -1,13 +1,29 @@
-# ReturnDesk Application
+# ReturnDesk 📦
 
-## Deployed URL
-- Live Demo: [TO_BE_PASTED_AFTER_VERCEL_DEPLOYMENT]
+ReturnDesk is an internal dashboard for managing customer return requests, built with Next.js, Prisma, Neon PostgreSQL, and Tailwind CSS.
 
-## Tech Stack
-- Next.js 14 App Router, PostgreSQL (Neon), Prisma ORM, Tailwind CSS
+## 🚀 Live Demo
 
-## Core Business Logic (Server-Side)
-- Enforces lifecycle status progression (OPEN -> IN_REVIEW -> APPROVED/REJECTED -> COMPLETED).
-- Approval requires resolution type; REFUND requires amount > 0.
-- Prevents duplicate live requests for same item on order.
-- Locks records on final decision; restricts soft-deletes to OPEN/REJECTED.
+- **Deployed URL:** [https://returndesk-psi.vercel.app/](https://returndesk-psi.vercel.app/)
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Database:** PostgreSQL (Hosted on Neon)
+- **ORM:** Prisma
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+
+## ✨ Key Features
+
+- **Return Requests Overview:** View, search, and paginate through customer return requests.
+- **Filtering & Search:** Real-time filtering by status, return reason, customer name, email, or order ID.
+- **Create Requests:** Add new return requests with duplicate prevention validation.
+- **Detailed View:** Inspect request history and associated internal notes.
+
+## 💻 Local Development Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/snehasabde/returndesk.git](https://github.com/snehasabde/returndesk.git)
+   cd returndesk
