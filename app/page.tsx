@@ -1,9 +1,16 @@
+// 'use client';
+
+// import { useState, useEffect } from 'react';
+// import RequestList from '@/app/components/RequestList';
+// import RequestDetailModal from '@/app/components/RequestDetailModal';
+// import CreateRequestModal from '@/app/components/CreateRequestModal';
+
 'use client';
 
 import { useState, useEffect } from 'react';
-import RequestList from '@/app/components/RequestList';
-import RequestDetailModal from '@/app/components/RequestDetailModal';
-import CreateRequestModal from '@/app/components/CreateRequestModal';
+import RequestList from '@/components/RequestList';
+import RequestDetailModal from '@/components/RequestDetailModal';
+import CreateRequestModal from '@/components/CreateRequestModal';
 
 export default function Home() {
   const [requests, setRequests] = useState([]);
