@@ -2,11 +2,11 @@
 
 ReturnDesk is an internal dashboard for managing customer return requests, built with Next.js, Prisma, Neon PostgreSQL, and Tailwind CSS.
 
-## 🚀 Live Demo
+#  Live Demo
 
 - **Deployed URL:** [https://returndesk-psi.vercel.app/](https://returndesk-psi.vercel.app/)
 
-## 🛠️ Tech Stack
+# Tech Stack
 
 - **Framework:** Next.js 14 (App Router)
 - **Database:** PostgreSQL (Hosted on Neon)
@@ -14,14 +14,14 @@ ReturnDesk is an internal dashboard for managing customer return requests, built
 - **Styling:** Tailwind CSS
 - **Deployment:** Vercel
 
-## ✨ Key Features
+#  Key Features
 
 - **Return Requests Overview:** View, search, and paginate through customer return requests.
 - **Filtering & Search:** Real-time filtering by status, return reason, customer name, email, or order ID.
 - **Create Requests:** Add new return requests with duplicate prevention validation.
 - **Detailed View:** Inspect request history and associated internal notes.
 
-## 📁 Folder Structure
+# Folder Structure
 
 ```text
 returndesk/
